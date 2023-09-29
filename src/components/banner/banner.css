@@ -1,0 +1,22 @@
+.banner {
+  position: relative;
+  margin-bottom: 20px;
+  margin-right: 40px;
+  margin-left: 40px;
+}
+.banner .banner_img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 9em;
+  width: 100%;
+  border-radius: 20px;
+  filter: brightness(0.8);
+}
+.banner .banner_title {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 2em;
+}/*# sourceMappingURL=banner.css.map */
