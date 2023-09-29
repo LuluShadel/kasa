@@ -2,29 +2,19 @@ import styled from "styled-components"
 
 // style 
 
-const StyledImg = styled.img`
-object-fit: cover;
-    width: 100%;
-    height: 400px;
-    border-radius: 20px;
-    margin
-`
-
-const StyledSpan = styled.div `
-position: relative;
-    top: -80px;
-    left: 30px;
-    color: white;
-    font-size: 1.5em;
-    width: 300px;
-    height:0px;
-`
 const StyledCard = styled.div`
   position: relative;
   width: 100%;
   margin-bottom:20px;
   @media (min-width:768px){
     width:450px;
+  }
+  img{
+    object-fit: cover;
+    width: 100%;
+    height: 400px;
+    border-radius: 20px;
+    margin
   }
   
 `
@@ -41,6 +31,16 @@ const ImageOverlay = styled.div`
   pointer-events: none;
 `;
 
+const StyledSpan = styled.div `
+position: relative;
+    top: -80px;
+    left: 30px;
+    color: white;
+    font-size: 1.5em;
+    width: 300px;
+    height:0px;
+`
+
 
 
 
@@ -48,7 +48,7 @@ const ImageOverlay = styled.div`
 function Card({cover, title}) {
     return (
         <StyledCard>
-            <StyledImg src={cover} alt={title} />
+            <img src={cover} alt={title} />
             <ImageOverlay />
             <StyledSpan>{title }</StyledSpan>
         </StyledCard>

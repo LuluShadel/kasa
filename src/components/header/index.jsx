@@ -5,17 +5,13 @@ import styled from 'styled-components'
 
 //Ajout du style 
 
-const StyledLogoKasa = styled.img`
-height:40px;
-margin:20px;
-`
 const StyledHeader = styled.header `
 display:flex;
 justify-content:space-between;
-`
-
-const StyledNav = styled.nav`
-margin:40px;
+margin:40px;;
+    img {
+          height:40px;
+        }
 `
 
 const StyledLink = styled(Link)`
@@ -32,11 +28,11 @@ text-decoration:underline;
 function Header (){
     return (
         <StyledHeader>
-            <StyledLogoKasa src={logoKasa} alt="Logo de Kasa" />
-            <StyledNav>
+            <img src={logoKasa} alt="Logo de Kasa" />
+            <nav>
             <StyledLink to="/">Accueil</StyledLink>
             <StyledLink to="/Apropos">A propos</StyledLink>
-            </StyledNav>
+            </nav>
         </StyledHeader>
     )
 }

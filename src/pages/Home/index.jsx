@@ -7,31 +7,33 @@ import colors from '../../styles/colors';
 
 //Ajout de style 
 
-const StyledDivGlobal = styled.div`
-margin:40px;
-`
-const StyledImg = styled.img `
-object-fit:cover;
+const StyledDiv = styled.div`
+position:relative;
+margin-bottom:20px;
+margin-right:40px;
+margin-left:40px;
+
+ img{
+  object-fit:cover;
 height:9em;
 width:100%;
 border-radius:20px;
 filter : brightness(0.8);
-`
-const StyledP = styled.div `
-position: absolute;
+ }
+
+ div {
+  position: absolute;
 top: 50%;
 left: 50%;
 transform: translate(-50%, -50%);
 color:white;
 font-size:2em;
-`
-
-const StyledDiv = styled.div`
-position:relative;
-margin-bottom:20px;
+ }
 `
 
 const StyledCard = styled.div`
+margin-right:40px;
+margin-left:40px;
 @media (min-width:768px){
   display:flex;
   flex-direction: raw;
@@ -41,17 +43,19 @@ const StyledCard = styled.div`
   background-color:${colors.background};
   padding:15px;
   border-radius:20px;
+  margin-right:40px;
+  margin-left:40px;
 }
 `
 //fonction 
 function Home() {
   return (
-    <StyledDivGlobal>
+    <div>
       <StyledDiv>
-      <StyledImg src={imgMontagneHome} alt='montagne'/>
-      <StyledP>
+      <img src={imgMontagneHome} alt='montagne'/>
+      <div>
       <p>Chez vous, partout et ailleurs</p>
-      </StyledP>
+      </div>
       </StyledDiv>
       <StyledCard>
       {data.map((logement, index) => (
@@ -63,7 +67,7 @@ function Home() {
       ))}
     </StyledCard>
 
-    </StyledDivGlobal>
+    </div>
   );
 }
 
