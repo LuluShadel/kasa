@@ -1,0 +1,35 @@
+@import "../../styles/colors.scss";
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .collapse {
+        background-color:$primary;
+        color:white;
+        margin-bottom:20px;
+        padding:5px;
+        width:80%;
+        border-radius:5px;
+        display: flex;
+        justify-content: space-between;
+
+        p{
+            margin:0 0 0 10px;
+            font-size:1.1em;
+         }
+         .rotate-90 {
+            transform: rotate(-180deg);
+            transition: transform 0.5s ease;
+        }
+}
+.menu_Hide {
+    width: 80%;
+    background-color: $background;
+    color:$primary;
+    position: relative;
+    top: -22px;
+    padding: 5px;
+    z-index: -2;
+}
+}

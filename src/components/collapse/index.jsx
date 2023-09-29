@@ -1,50 +1,8 @@
-import styled from "styled-components";
-import colors from "../../styles/colors";
+
 import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronUp } from "@fortawesome/free-solid-svg-icons";
-
-const StyledGlobal = styled.div`
-display: flex;
-    flex-direction: column;
-    align-items: center;
-    .collapse {
-        background-color:${colors.primary};
-        color:white;
-        margin-bottom:20px;
-        padding:5px;
-        width:80%;
-        border-radius:5px;
-        display: flex;
-        justify-content: space-between;
- p{
-    margin:0 0 0 10px;
-    font-size:1.1em;
- }
-
- i {
-    margin:3px;
- }
-
-
-    }
-
-.collapseMenu {
-    width: 80%;
-    background-color: ${colors.background};
-    color:${colors.primary};
-    position: relative;
-    top: -22px;
-    padding: 5px;
-    z-index: -2;
-}
-
-.rotate-90 {
-    transform: rotate(-180deg);
-    transition: transform 0.5s ease;
-}
-
-`
+import './collapse.scss'
 
 
 
@@ -80,7 +38,7 @@ function Collapse (){
       };
     
     return (
-        <StyledGlobal>
+        <div className="menu">
         <div className="collapse" onClick={() => toggleCollapse("fiabilite")} >
             <p>Fiabilité</p>
             <FontAwesomeIcon
@@ -89,7 +47,7 @@ function Collapse (){
         />
         </div>
         {isOpen.fiabilite && (
-        <div className="collapseMenu">
+        <div className="menu_Hide">
           <p>Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulierement vérifiées par nos équipes.</p>
         </div>
       )}
@@ -101,7 +59,7 @@ function Collapse (){
         />
             </div>
             {isOpen.respect && (
-                <div className="collapseMenu"><p>La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de pertubation du voisinage entraînera une exclusion de notre platerforme. /</p></div>
+                <div className="menu_Hide"><p>La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de pertubation du voisinage entraînera une exclusion de notre platerforme. /</p></div>
             )}
         <div className="collapse" onClick={()=> toggleCollapse("service")}>
             <p>Service</p>
@@ -111,7 +69,7 @@ function Collapse (){
         />
         </div>
         {isOpen.service && (
-                <div className="collapseMenu"><p>La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de pertubation du voisinage entraînera une exclusion de notre platerforme.</p></div>
+                <div className="menu_Hide"><p>La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de pertubation du voisinage entraînera une exclusion de notre platerforme.</p></div>
             )}
         <div className="collapse" onClick={() => toggleCollapse("securite")} >
             <p>Sécurité</p>
@@ -121,9 +79,9 @@ function Collapse (){
         />
         </div>
         {isOpen.securite && (
-                <div className="collapseMenu"> <p>La sécurité est la priorité de Kasa. Aussi bien pour nos hôtes que pour les voyageurs, chaque logement correspond aux critères de sécurité établis par nos services. En laissant une note aussi bien à l'hôte qu'au locataire, cela permet à nos equipes de vérifier que les standars sont bien respectés. Nous organisons également des ateliers que la sécurité domestique pour nos hôtes.</p> </div>
+                <div className="menu_Hide"> <p>La sécurité est la priorité de Kasa. Aussi bien pour nos hôtes que pour les voyageurs, chaque logement correspond aux critères de sécurité établis par nos services. En laissant une note aussi bien à l'hôte qu'au locataire, cela permet à nos equipes de vérifier que les standars sont bien respectés. Nous organisons également des ateliers que la sécurité domestique pour nos hôtes.</p> </div>
             )}
-        </StyledGlobal>
+        </div>
     )
 }
 

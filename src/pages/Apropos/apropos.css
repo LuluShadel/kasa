@@ -1,0 +1,12 @@
+.divglobal_aPropos {
+  margin: 40px;
+}
+.divglobal_aPropos img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 9em;
+  width: 100%;
+  border-radius: 20px;
+  filter: brightness(0.8);
+  margin-bottom: 20px;
+}/*# sourceMappingURL=apropos.css.map */
