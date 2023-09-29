@@ -1,30 +1,6 @@
 
 @import '../../styles/colors.scss';
 
-.globalDiv_home {
-    position:relative;
-margin-bottom:20px;
-margin-right:40px;
-margin-left:40px;
-
- img{
-  object-fit:cover;
-height:9em;
-width:100%;
-border-radius:20px;
-filter : brightness(0.8);
- }
-
- div {
-  position: absolute;
-top: 50%;
-left: 50%;
-transform: translate(-50%, -50%);
-color:white;
-font-size:2em;
- }
-}
-
 
 .card_home{
     margin-right:40px;

@@ -2,6 +2,7 @@ import './home.scss'
 import imgMontagneHome from '../../Assets/ImgMontagneHome.png'
 import Card from '../../components/card'
 import data from '../../data';
+import Banner from '../../components/banner';
 
 
 
@@ -10,12 +11,9 @@ import data from '../../data';
 function Home() {
   return (
     <div>
-      <div className='globalDiv_home'>
-      <img src={imgMontagneHome} alt='montagne'/>
-      <div>
-      <p>Chez vous, partout et ailleurs</p>
-      </div>
-      </div>
+      <Banner 
+        img={imgMontagneHome}
+        title="Chez vous, partout et ailleurs" />
       <div className='card_home'>
       {data.map((logement, index) => (
         <Card
