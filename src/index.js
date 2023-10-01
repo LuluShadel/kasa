@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import GlobalStyle from './styles/GlobalStyle'
 import Home from './pages/Home';
-import Logements from './pages/Logements'
+import Logements from './pages/Logement'
 import Apropos from './pages/Apropos'
 import Error from './components/error';
 import Header from './components/header';
@@ -18,7 +18,7 @@ ReactDOM.render(
         <Header />
           <Routes>
               <Route path="/" element={<Home />} />
-              <Route path='/Logements' element={<Logements />} />
+              <Route path='/Logement/:id' element={<Logements />} />
               <Route path='/Apropos' element={<Apropos />} />
               <Route path='*' element={<Error />} />
           </Routes>
