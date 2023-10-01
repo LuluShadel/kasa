@@ -12,6 +12,7 @@ import './logement.scss'
 function Logement() {
     const { id } = useParams();
     const logement = data.find((item) => item.id ===(id));
+    const equiments_list = logement.equipments
     
   
     if (!logement) {
@@ -54,7 +55,8 @@ function Logement() {
 
         <Collapse 
         title="Equipements"
-        text={logement.equipments}
+        text={equiments_list.map((equipment, index) => (
+          <li key={index}>{equipment}</li>))}
         />
         </div>
       </div>
