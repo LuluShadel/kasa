@@ -27,8 +27,15 @@
     color:$primary;
     position: relative;
     top: -22px;
-    padding: 5px;
     z-index: -2;
+}
+ul {
+    margin:0;
+    padding: 15px;
+}
+li{
+    margin:0;
+    list-style: none;
 }
 }
 

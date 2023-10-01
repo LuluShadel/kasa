@@ -29,7 +29,9 @@ class Collapse extends Component {
         </div>
         {isOpen && ( 
           <div className={`menu_Hide`}>
-            <p>{text}</p>
+            <ul>
+              <li>{text}</li>
+              </ul>
           </div>
         )}
       </div>
