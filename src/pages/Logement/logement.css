@@ -1,0 +1,48 @@
+.globalDiv-logement {
+  margin-right: 40px;
+  margin-left: 40px;
+}
+.globalDiv-logement .logement-title {
+  color: #FF6060;
+  font-size: 2em;
+  margin: 10px 0 10px 0;
+}
+.globalDiv-logement .logement-location {
+  color: #FF6060;
+  font-size: 1.1em;
+  font-weight: bold;
+  margin: 0 0 10px 0;
+}
+.globalDiv-logement .title-to-host {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 768px) {
+  .globalDiv-logement .title-to-host {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+    justify-content: space-between;
+  }
+}
+.globalDiv-logement .title-to-host .rating-host {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0 20px 0;
+  align-items: center;
+}
+@media (min-width: 768px) {
+  .globalDiv-logement .title-to-host .rating-host {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+.globalDiv-logement .logement-collapse {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 768px) {
+  .globalDiv-logement .logement-collapse {
+    flex-direction: row;
+  }
+}/*# sourceMappingURL=logement.css.map */

@@ -1,0 +1,55 @@
+@import '../../styles/colors.scss';
+
+.globalDiv-logement {
+    margin-right: 40px;
+    margin-left: 40px;
+    .logement-title {
+        color:$primary;
+        font-size: 2em;
+        margin:10px 0 10px 0;
+    }
+    .logement-location {
+        color:$primary;
+        font-size: 1.1em;
+        font-weight: bold;
+        margin: 0 0 10px 0;
+    }
+    
+    
+
+    .title-to-host{
+        display: flex;
+    flex-direction: column;
+    @media (min-width:768px){
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 20px;
+        justify-content: space-between;
+    }
+    .rating-host{
+        display: flex;
+    justify-content: space-between;
+    margin:20px 0 20px 0;
+    align-items: center;
+    @media (min-width:768px){
+        display: flex;
+        flex-direction: column-reverse;
+        
+    }
+    }
+}
+    .logement-collapse{
+        display: flex;
+        flex-direction: column;
+        @media (min-width:768px){
+            flex-direction: row;
+    }
+    }
+
+}
+    
+
+
+
+
+
