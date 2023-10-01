@@ -1,0 +1,12 @@
+.rating {
+  position: relative;
+  width: 100%;
+}
+.rating .neutral_star {
+  color: #e3e3e3;
+  position: absolute;
+}
+.rating .show_star {
+  color: #FF6060;
+  position: absolute;
+}/*# sourceMappingURL=rating.css.map */

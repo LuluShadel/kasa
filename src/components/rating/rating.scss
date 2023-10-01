@@ -1,0 +1,17 @@
+@import '../../styles/colors.scss';
+
+.rating{
+
+    position: relative;
+    width: 100%;
+.neutral_star {
+    color:#e3e3e3 ;
+    position: absolute;
+}
+
+.show_star {
+    color:$primary;
+    position: absolute;
+}
+
+}
