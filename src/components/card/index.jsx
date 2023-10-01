@@ -7,7 +7,7 @@ import './card.scss'
 function Card({cover, title}) {
     return (
         <div className="card">
-            <img src={cover} alt={title} />
+            <img className='card-img' src={cover} alt={title} />
             <div className="img_overlay"></div>
             <div className="card_title">{title }</div>
         </div>

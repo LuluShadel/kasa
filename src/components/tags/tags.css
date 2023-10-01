@@ -1,0 +1,14 @@
+.tags {
+  display: flex;
+  flex-direction: row;
+}
+
+.tags-only {
+  background-color: #FF6060;
+  color: white;
+  padding: 5px;
+  width: 150px;
+  border-radius: 10px;
+  margin-right: 20px;
+  text-align: center;
+}/*# sourceMappingURL=tags.css.map */

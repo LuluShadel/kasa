@@ -1,10 +1,10 @@
-h1 {
+.error-title {
   font-size: 15em;
   color: #FF6060;
   text-align: center;
 }
 
-h2 {
+.error-sub-title {
   color: #FF6060;
   font-size: 3em;
   text-align: center;

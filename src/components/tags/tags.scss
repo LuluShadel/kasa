@@ -1,0 +1,20 @@
+@import '../../styles/colors.scss';
+
+
+.tags{
+    display: flex;
+    flex-direction: row;
+}
+
+.tags-only{
+    background-color: $primary;
+    color: white;
+    padding: 5px;
+    width: 150px;
+    border-radius: 10px;
+    margin-right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}

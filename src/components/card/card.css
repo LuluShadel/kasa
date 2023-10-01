@@ -9,7 +9,7 @@
     width: 450px;
   }
 }
-.card img {
+.card .card-img {
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;

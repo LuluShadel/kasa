@@ -1,0 +1,11 @@
+.caroussel {
+  display: flex;
+  justify-content: center;
+}
+.caroussel img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 300px;
+  border-radius: 30px;
+}/*# sourceMappingURL=caroussel.css.map */
