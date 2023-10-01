@@ -1,5 +1,6 @@
 import data from "../../data";
 import { useParams } from "react-router-dom";
+import Error from "../../components/error";
 import Caroussel from "../../components/caroussel";
 import Tags from "../../components/tags"
 import Collapse from "../../components/collapse";
@@ -14,7 +15,9 @@ function Logement() {
     
   
     if (!logement) {
-      return <div>Logement introuvable</div>;
+        return <Error />
+      
+      
     }
   
     return (
