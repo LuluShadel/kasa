@@ -19,21 +19,25 @@ class Collapse extends Component {
   render() {
     const { title, text } = this.props;
     const { isOpen } = this.state;
-    const rotateIconClass = isOpen ? 'rotate-icon' : ''; 
+    const rotateIconClass = isOpen ? 'rotate-icon' : 'rotate-icon-closed'; 
 
     return (
       <div className="menu">
         <div className="collapse" onClick={this.toggleCollapse}>
           <p>{title}</p>
           <i className={`fa fa-chevron-up ${rotateIconClass}`} />
-        </div>
-        {isOpen && ( 
-          <div className={`menu_Hide`}>
+        </div> 
+        {isOpen ? ( 
+          <div className={"menu_Hide"}>
             <ul>
               <li>{text}</li>
               </ul>
           </div>
-        )}
+        ) : <div className="menu_Hide closed">
+        <ul>
+          <li>{text}</li>
+        </ul>
+      </div>}
       </div>
     );
   }
