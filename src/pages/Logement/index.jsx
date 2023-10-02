@@ -24,7 +24,7 @@ function Logement() {
     return (
       <div className="globalDiv-logement">
         <Caroussel 
-        img={logement.cover}
+        img={logement.pictures}
         title={logement.title}
         />
 <div className="title-to-host">
