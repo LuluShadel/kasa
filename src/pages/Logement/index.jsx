@@ -1,4 +1,4 @@
-import data from "../../data";
+import data from "../../data"
 import { useParams } from "react-router-dom";
 import Error from "../../components/error";
 import Caroussel from "../../components/caroussel";
@@ -13,7 +13,19 @@ function Logement() {
     const { id } = useParams();
     const logement = data.find((item) => item.id ===(id));
     const equiments_list = logement.equipments
+    //const [logements, setLogements] = useState([0])
     
+    /* useEffect (()=> {
+      fetch ("../../data")
+      .then ((response) => response.json())
+      .then ((data) => {
+        setLogement(data)
+      }) 
+      .catch ((error) => {
+        console.log ("Erreur lors de la récupération des données" error )
+      })
+    }
+    [])*/
   
     if (!logement) {
         return <Error />

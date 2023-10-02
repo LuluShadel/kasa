@@ -1,7 +1,7 @@
 import './home.scss'
 import imgMontagneHome from '../../Assets/ImgMontagneHome.png'
 import Card from '../../components/card'
-import data from '../../data';
+import data from '../../data'
 import Banner from '../../components/banner';
 import { Link } from 'react-router-dom';
 
