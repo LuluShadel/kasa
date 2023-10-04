@@ -12,7 +12,7 @@ import './logement.scss'
 function Logement() {
     const { id } = useParams();
     const logement = data.find((item) => item.id ===(id));
-    const equiments_list = logement.equipments
+    
     //const [logements, setLogements] = useState([0])
     
     /* useEffect (()=> {
@@ -29,9 +29,8 @@ function Logement() {
   
     if (!logement) {
         return <Error />
-      
-      
     }
+    const equiments_list = logement.equipments
   
     return (
       <div className="globalDiv-logement">
