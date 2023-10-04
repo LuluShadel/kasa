@@ -61,13 +61,12 @@ function Logement() {
         <div className="logement-collapse">
         <Collapse
         title="Description"
-        text={logement.description}
+        text={[logement.description]}
         />
 
         <Collapse 
         title="Equipements"
-        text={equiments_list.map((equipment, index) => (
-          <li key={index}>{equipment}</li>))}
+        text={equiments_list}
         />
         </div>
       </div>
