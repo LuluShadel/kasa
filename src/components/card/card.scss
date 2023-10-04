@@ -6,6 +6,9 @@
   @media (min-width:768px){
     width:450px;
   }
+  &:hover {
+    filter: brightness(1.1);
+  }
   .card-img{
     object-fit: cover;
     width: 100%;
