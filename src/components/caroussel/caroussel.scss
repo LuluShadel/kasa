@@ -6,18 +6,27 @@
         width: 100%;
         height: 500px;
         border-radius: 30px;
+        
 
     }
     .arrow {
         position: absolute;
     }
     .arrow_left {
-        left: 50px;
+        bottom:300px  ;
+        left:20px;
+        @media (min-width:848px){
+        left: 100px;
         bottom: 250px;
+        }
     }
     .arrow_right {
-        right: 70px;
+        bottom: 300px;
+        right:40px;
+        @media (min-width:848px){
+        right: 120px;
         bottom: 250px;
+        }
     }
 
     .count {
@@ -26,4 +35,5 @@
         bottom: -450px;
         right: 50%;
     }
+    
 }

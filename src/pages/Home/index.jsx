@@ -11,7 +11,7 @@ import { Link } from 'react-router-dom';
 //fonction 
 function Home() {
   return (
-    <div>
+    <div className='body'>
       <Banner 
         img={imgMontagneHome}
         title="Chez vous, partout et ailleurs" />

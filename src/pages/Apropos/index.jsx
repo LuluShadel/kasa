@@ -6,11 +6,11 @@ import Banner from '../../components/banner'
 
 function Apropos () {
     return (
-        <div>
+        <div className='divglobal_aPropos'>
             <Banner 
             img={imgMontagneApropos}
             title={""} />
-            <div className='divglobal_aPropos'>
+            <div>
             <Collapse
             title="Fiabilité"
             text="Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulierement vérifiées par nos équipes."/>

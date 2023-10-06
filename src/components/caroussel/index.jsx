@@ -29,7 +29,10 @@ function Caroussel(props) {
           onClick={() => handleArrowClick("left")}
         />
       )}
-      <img className="caroussel_img" src={img[count]} alt={title} />
+      <img 
+      className="caroussel_img" 
+      src={img[count]} 
+      alt={title} />
       {showArrows && (
         <img
           className="arrow_right arrow"
