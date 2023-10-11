@@ -22,11 +22,18 @@ header {
     color:$primary;
     margin-right:20px;
     font-size:1.2em;
+    text-transform: uppercase;
     &:hover{
         text-decoration:underline;
         }
         @media (min-width:848px){
             font-size:1.5em;
+            text-transform: capitalize;
+            
 
         }
+}
+
+.active {
+    text-decoration: underline;
 }

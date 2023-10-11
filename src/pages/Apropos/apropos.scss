@@ -1,8 +1,11 @@
 
 .divglobal_aPropos{
+margin: 0;
 
-margin-right:5em;
+@media (min-width:848px){
+    margin-right:5em;
 margin-left: 5em;
+}
     img{
         object-fit:cover;
 height:9em;
